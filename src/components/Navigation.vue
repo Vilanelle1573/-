@@ -11,10 +11,14 @@
         <div class="tabbox">
             <h3>我的</h3>
         </div>
+
+        <div class="tabbox">
+            <h3>关于</h3>
+        </div>
     </div>
 </template>
 
-<style>
+<style scoped>
 .banner {
     position: fixed;
     top: 0;
@@ -35,7 +39,7 @@
 }
 
 .tabbox {
-    width: 33.33%;
+    width: 25%;
     height: 70px;
     border-left: #fff;
     border-right: #fff;
