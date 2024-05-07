@@ -1,21 +1,12 @@
 <template>
-    <div class="banner">
-        <div class="tabbox">
-            <h3>计时</h3>
-        </div>
-
-        <div class="tabbox">
-            <h3>日程</h3>
-        </div>
-
-        <div class="tabbox">
-            <h3>我的</h3>
-        </div>
-
-        <div class="tabbox">
-            <h3>关于</h3>
-        </div>
-    </div>
+    <nav>
+        <ul class="banner">
+            <li><router-link to="/timer" class="nav-link">计时</router-link></li>
+            <li><router-link to="/schedule" class="nav-link">日程</router-link></li>
+            <li><router-link to="/mine" class="nav-link">我的</router-link></li>
+            <li><router-link to="/about" class="nav-link">关于</router-link></li>
+        </ul>
+    </nav>
 </template>
 
 <style scoped>
@@ -38,7 +29,7 @@
     flex-direction: row;
 }
 
-.tabbox {
+.nav-link {
     width: 25%;
     height: 70px;
     border-left: #fff;
