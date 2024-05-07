@@ -1,10 +1,10 @@
 <template>
     <nav>
         <ul class="banner">
-            <li><router-link to="/timer" class="nav-link">计时</router-link></li>
-            <li><router-link to="/schedule" class="nav-link">日程</router-link></li>
-            <li><router-link to="/mine" class="nav-link">我的</router-link></li>
-            <li><router-link to="/about" class="nav-link">关于</router-link></li>
+            <li><router-link to="/timer" class="nav-link" active-class="active-link">计时</router-link></li>
+            <li><router-link to="/schedule" class="nav-link" active-class="active-link">日程</router-link></li>
+            <li><router-link to="/mine" class="nav-link" active-class="active-link">我的</router-link></li>
+            <li><router-link to="/about" class="nav-link" active-class="active-link">关于</router-link></li>
         </ul>
     </nav>
 </template>
@@ -15,28 +15,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
-    background-color: red;
+    height: 45px;
+    background-color: rgb(241, 171, 171);
     color: #fff;
-    /*文本颜色 */
     padding: 10px 0;
     text-align: center;
     z-index: 1000;
-    /* 可选：控制横幅在其他元素之上 */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    justify-content: space-between; /* 平均分布子元素 */
 }
 
 .nav-link {
-    width: 25%;
+    width: 20%;
     height: 70px;
-    border-left: #fff;
-    border-right: #fff;
+    border:2px solid black;
+    border-color: aqua;
+    border-style:inset;
 }
+
 </style>
-
-<script>
-
-</script>
