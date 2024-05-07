@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2 class="stage">专注中</h2>
+        <h1 class="stage">专注中</h1>
 
         <transition name="fade">
             <h2 class="countdown" v-if="countdownSeconds > 0">{{ countdown }}</h2>
